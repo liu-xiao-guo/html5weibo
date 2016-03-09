@@ -1,0 +1,21 @@
+{
+    "name": "html5-weibo.ubuntu",
+    "description": "description of html5-weibo",
+    "architecture": "all",
+    "title": "html5-weibo",
+    "hooks": {
+        "html5weibo": {
+            "apparmor": "html5weibo.apparmor",
+            "desktop": "html5weibo.desktop",
+            "account-application": "weibo.application",
+            "account-service": "weibo.service"
+        },
+        "account-plugin": {
+            "account-provider": "plugin/html5-weibo.ubuntu_account-plugin.provider",
+            "account-qml-plugin": "plugin/qml"
+        }
+    },
+    "version": "0.1",
+    "maintainer": "XiaoGuo, Liu <xiaoguo.liu@canonical.com>",
+    "framework": "ubuntu-sdk-14.10"
+}
